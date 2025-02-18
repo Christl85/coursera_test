@@ -1,1 +1,22 @@
-
+div {
+ background-color: red;
+}
+p {
+ width: 33,33%, 
+ height: 50px;
+ border: 1px solid black;
+ float: left;
+ padding: 10px;
+}
+#p1 {
+ background-color: blue;
+ float: left;
+}
+#p2 {
+ background-color: yellow;
+ float: left;
+}
+#p3 {
+ background-color:brown;
+ float:left;
+}
