@@ -17,7 +17,7 @@ h1 {
 .section { 
   display: grid;
   grid-template-columns: repeat (3, 1fr);
-  grid-template-rows: tepeat (2, 1fr);
+  grid-template-rows: repeat (2, 1fr);
   justifi-content: center;
   align-items: center;
   width: 80%;
@@ -41,14 +41,14 @@ h1 {
 @media (max-width: 991px) and (min-width: 768) {
 /* Desktop styles */
   .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat (2, 1fr);
     gap: 30px;
   }
 }
 @media (max-width: 767px) {
   /* Mobile style */
   .container {
-    grid-template-columns: repeat(1lfr);
+    grid-template-columns: repeat (1fr);
     gap: 20px;  }
 }
   </style>
