@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name=viewport" content="width=device-width, initial-scale=1.0">
     <title>module2-solution</title>
-    <link rel="stylesheet" href="css/style.css"/>
   </head>
-  <body>
+  <style>
+   /* General styles */
+body {
+  font-family: Arial, sans-serif;
+}
+.section {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  background-color: lightgray;
+  postion: relative;
+  box-sizing: border-box;
+}
+.section-title {
+  background-color: darkgray;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  border: 1px solid black;
+}
+@media (min-width: 992px) {
+/* Desktop styles */
+.section {
+  width: 30%;
+  float: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 991) {
+  /* Tablet styles */
+  .section {
+    width: 45%;
+    float: left; 
+  }
+  .section:nth-child(3) {
+    width: 100%, 
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+  /* Mobile style */
+  .section {
+    width: 100%
+    float: none;
+  }
+}
+  </style>
+ <body>
   <h1>Our Menu</h1>
     <div class="section">
       <div class="section-title">Chicken</div>
