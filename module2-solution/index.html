@@ -14,9 +14,6 @@ h1 {
   margin-top: 50px;
   text-align: center;
 }
-body {
-  font-family: Arial, sans-serif;
-}
 .section { 
   display: grid;
   grid-template-columns: repeat (3, 1fr);
@@ -31,9 +28,7 @@ body {
 .box1 {
   background-color: darkgray;
   padding: 5px;
-  position: absolute;
-  top: 10px;
-  right: 10px; 
+  height: 180px;
   border: 2px solid black;
 }
     #littlebox {
@@ -43,25 +38,25 @@ body {
       height: 25px;
       text-align: center;
     }
-@media (min-width: 992px) {
+@media (max-width: 991px) and (min-width: 768) {
 /* Desktop styles */
   .container {
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 }
 @media (max-width: 767px) {
   /* Mobile style */
   .container {
-    grid-template-columns: repeat (1lfr);
+    grid-template-columns: repeat(1lfr);
     gap: 20px;  }
 }
   </style>
  <body>
   <h1>Our Menu</h1>
-   <main class=section">
+   <main class="section">
     <div class="box1">
-      <div style="background-color: green" id="littlebox">Chicken</div>
+      <div style="background-color: green;" id="littlebox">Chicken</div>
       <br>
       <br>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -70,7 +65,7 @@ body {
           aliquip ex ea commodo consequat.</p>
     </div>
     <div class="box1">
-      <div style="background-color: blue" id="littlebox">Beef</div>
+      <div style="background-color: blue;" id="littlebox">Beef</div>
       <br>
       <br>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -79,7 +74,7 @@ body {
           aliquip ex ea commodo consequat.</p>    
     </div>
   <div class="box1">
-      <div style="background-color: orange" id="littlebox">Sushi</div>
+      <div style="background-color: orange;" id="littlebox">Sushi</div>
     <br>
     <br>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
